@@ -3,7 +3,7 @@
 %define dist %(/usr/lib/rpm/redhat/dist.sh)
 
 Name:               my-great-rest-service
-Version:            1.0.0
+Version:            %{project_version}
 Release:            %{rel}%{?snapshot}%{?dist}
 Summary:            X-Road Catalog test service
 Group:              Applications/Internet
