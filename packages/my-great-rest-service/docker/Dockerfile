@@ -5,4 +5,4 @@ RUN yum clean all
 RUN sed -i 's/requiretty/!requiretty/' /etc/sudoers
 
 USER root
-CMD /workspace/xroad/xroad-catalog-test-service-build/build_rpm.sh
+CMD /workspace/rest-test-service/build_rpm.sh
