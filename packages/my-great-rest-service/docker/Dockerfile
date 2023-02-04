@@ -5,5 +5,4 @@ RUN yum clean all
 RUN sed -i 's/requiretty/!requiretty/' /etc/sudoers
 
 USER root
-RUN ls -la /workspace
-CMD /workspace/rest-test-service/build_rpm.sh
+CMD /workspace/build_rpm.sh
