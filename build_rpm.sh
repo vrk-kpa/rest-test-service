@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-DIR="workspace/rest-test-service/packages/my-great-rest-service/redhat"
+DIR="workspace/packages/my-great-rest-service/redhat"
 cd $DIR
 
 ROOT=`pwd`
