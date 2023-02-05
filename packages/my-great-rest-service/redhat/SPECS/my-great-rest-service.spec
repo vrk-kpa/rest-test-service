@@ -24,8 +24,6 @@ X-Road test service
 %build
 
 %install
-pwd
-ls -la
 mkdir -p %{buildroot}%{jlib}
 mkdir -p %{buildroot}%{_unitdir}
 mkdir -p %{buildroot}/usr/share/xroad/bin
