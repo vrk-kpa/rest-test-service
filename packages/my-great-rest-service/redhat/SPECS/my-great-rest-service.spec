@@ -26,16 +26,23 @@ X-Road test service
 %install
 mkdir -p %{buildroot}%{jlib}
 mkdir -p %{buildroot}%{_unitdir}
-mkdir -p %{buildroot}/usr/share/xroad/bin
+mkdir -p %{buildroot}/usr/share/my-great-rest-service/bin
 cp -p %{src}/../../../build/libs/MyGreatRestService-%{version}.jar %{buildroot}%{jlib}/%{name}.jar
+cp -p %{src}/SOURCES/%{name} %{buildroot}/usr/share/my-great-rest-service/bin
+cp -p %{src}/SOURCES/%{name}.service %{buildroot}%{_unitdir}
+
+
+
+
 
 %clean
 rm -rf %{buildroot}
 
 %files
+%defattr(600,xroad-catalog,xroad-catalog,-)
 %attr(644,root,root) %{_unitdir}/%{name}.service
 %attr(755,xroad-catalog,xroad-catalog) %{jlib}/%{name}.jar
-%attr(744,xroad-catalog,xroad-catalog) /usr/share/xroad/bin/%{name}
+%attr(744,xroad-catalog,xroad-catalog) /usr/share/my-great-rest-service/bin/%{name}
 
 %pre
 if ! id xroad-catalog > /dev/null 2>&1 ; then

@@ -6,7 +6,7 @@ PermissionsStartOnly=true
 User=xroad-catalog
 Group=xroad-catalog
 Restart=on-failure
-ExecStart=/usr/share/xroad/bin/my-great-rest-service
+ExecStart=/usr/share/my-great-rest-service/bin/my-great-rest-service
 
 [Install]
 WantedBy=multi-user.target
