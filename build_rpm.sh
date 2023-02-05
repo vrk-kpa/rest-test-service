@@ -1,8 +1,14 @@
 #!/bin/sh
 
-
+pwd
+ls -la workspace/
+ls -la workspace/packages/
+ls -la workspace/packages/my-great-rest-service
+ls -la workspace/packages/my-great-rest-service/redhat
 DIR="workspace/packages/my-great-rest-service/redhat"
 cd $DIR
+pwd
+ls -la
 
 ROOT=`pwd`
 RELEASE=1
